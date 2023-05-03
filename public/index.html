@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dish Manager</title>
+	<link rel=stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>Dish Manager</h1>
+	<div id="dishes-container">
+		<!-- Dish cards will be dynamically generated here -->
+	</div>
+	<form id="add-dish-form">
+		<h2>Add Dish</h2>
+		<label for="name">Name</label>
+		<input type="text" id="name" required>
+		<label for="image">Image URL</label>
+		<input type="text" id="image" name="type" required>
+		<label for="type">Type</label>
+		<input type="text" id="type" name="type" required>
+		<label for="ingredients">Ingredients (comma seperated)</label>
+		<input type="text" id="ingredients" name="ingredients" required>
+		<button type="submit">Add Dish</button>
+	</form>
+	<script src="script.js"></script>
+</body>
+</html>

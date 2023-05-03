@@ -1,0 +1,66 @@
+body {
+	font-family: Arial, sans-serif
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+#dishes-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+}
+
+.dish-card {
+	width: 200px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.dish-card img {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.dish-card h3 {
+	margin: 10px 0;
+}
+
+.dish-card p {
+	margin: 0;
+}
+
+form {
+	max-width: 400px;
+	margin: 20px auto;
+	padding: 10px;
+	background-color: #f0f0f0;
+	border-radius: 5px;
+}
+
+form label, form input, form button {
+	display: block;
+	margin-bottom: 10px;
+}
+
+form input {
+	width: 100%;
+	padding: 5px;
+}
+
+form button {
+	width: 100%;
+	padding: 10px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
