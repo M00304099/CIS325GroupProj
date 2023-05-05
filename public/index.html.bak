@@ -1,16 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Thai Restaurant</title>
+	<title>Dish Manager</title>
+	<link rel=stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Thai Restaurant</h1>
-    <!-- Add the necessary HTML elements for each feature -->
-    <!-- You can use forms, buttons, and other UI elements -->
-    <script src="script.js"></script>
+	<h1>Dish Manager</h1>
+	<div id="dishes-container">
+		<!-- Dish cards will be dynamically generated here -->
+	</div>
+	<form id="add-dish-form">
+		<h2>Add Dish</h2>
+		<label for="name">Name</label>
+		<input type="text" id="name" required>
+		<label for="image">Image URL</label>
+		<input type="text" id="image" name="type" required>
+		<label for="type">Type</label>
+		<input type="text" id="type" name="type" required>
+		<label for="ingredients">Ingredients (comma seperated)</label>
+		<input type="text" id="ingredients" name="ingredients" required>
+		<button type="submit">Add Dish</button>
+	</form>
+	<form id="get-dish-by-ingredient-form">
+		<h2>Get Dishes with Ingredient</h2>
+		<label for="ingredient">Ingredient</label>
+		<input type="text" id="ingredient" required>
+		<button type="submit">Get Dishes</button>
+	</form>
+
+	<form id="get-dish-by-type-form">
+		<h2>Get Dishes by Type</h2>
+		<label for="get-type">Type</label>
+		<input type="text" id="get-type" required>
+		<button type="submit">Get Dishes</button>
+	</form>
+
+	<form id="get-dish-by-name-form">
+		<h2>Get Dish by Name</h2>
+		<label for="get-name">Name</label>
+		<input type="text" id="get-name" required>
+		<button type="submit">Get Dish</button>
+	</form>
+	<script src="script.js"></script>
 </body>
 </html>
