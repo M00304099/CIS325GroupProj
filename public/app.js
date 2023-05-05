@@ -3,10 +3,9 @@ const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/your_database_name', {
+mongoose.connect('mongodb://127.0.0.1:27017/dish_manager', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useFindAndModify: false,
 })
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('Failed to connect to MongoDB', err));
@@ -14,6 +13,7 @@ mongoose.connect('mongodb://localhost:27017/your_database_name', {
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
 
 
 // API routes will be defined here
